@@ -13,7 +13,7 @@ function TodoItem({ text }) {
 }
 
 export default function TodoList() {
-  const [todos, setTodos] = useState([randomTask()]);
+  const [todos, setTodos] = useState([randomTask()]); // List now starts random
 
   function handleAdd() {
     setTodos([...todos, randomTask()]);
